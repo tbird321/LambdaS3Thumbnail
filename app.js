@@ -36,9 +36,8 @@ exports.handler = function (event, context) {
     
     // Download the image from S3, transform, and upload to a different S3 bucket.
     async.waterfall([
-        function download(next) {
-            
-            console.log('Downloading object: ' + srcKey)
+        function download(next) {            
+            console.log('Downloading object: ' + srcKey);
             // Download the image from S3 into a buffer.
             s3.getObject({
                 Bucket: srcBucket,
@@ -46,6 +45,8 @@ exports.handler = function (event, context) {
             }, next);
         },
         function tranform(response, next) {
+            console.log('Transforming object: ');
+            /*
             gm(response.Body).size(function (err, size) {
                 // Infer the scaling factor to avoid stretching the image unnaturally.
                 var scalingFactor = Math.min(
@@ -65,6 +66,9 @@ exports.handler = function (event, context) {
                     }
                 });
             });
+            */
+            next(null, response.ContentType, response.Body);
+            console.log('Transforming complete: ');
         },
         function upload(contentType, data, next) {
             
@@ -84,6 +88,7 @@ exports.handler = function (event, context) {
             });
         }
     ], function (err) {
+        console.log('Erroring');
         if (err) {
             console.error(
                 'Unable to resize ' + srcBucket + '/' + srcKey +
