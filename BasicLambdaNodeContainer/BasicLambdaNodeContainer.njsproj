@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>BasicLambdaNodeContainer</Name>
+    <RootNamespace>BasicLambdaNodeContainer</RootNamespace>
+    <Environment>
+</Environment>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>cbae8f27-e1ec-4a99-89be-97c251b9a895</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>False</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Content Include="CoreDLL\BasicLambda.dll" />
+    <Content Include="CoreDLL\Edge.js.CSharp.dll" />
+    <Content Include="CoreDLL\System.Console.dll" />
+    <Content Include="CoreDLL\System.Runtime.dll" />
+    <Content Include="CoreDLL\System.Runtime.InteropServices.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\dotnet_library_license.txt" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\MonoAndroid10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\MonoTouch10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\net45\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\net462\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\portable-net45+win8+wp80+wpa81\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\win8\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\wp80\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\wpa81\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\xamarinios10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\xamarinmac20\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\xamarintvos10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\lib\xamarinwatchos10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\MonoAndroid10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\MonoTouch10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\net45\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\net462\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\de\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\es\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\fr\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\it\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ja\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ko\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ru\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\zh-hans\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netcore50\zh-hant\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\de\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\es\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\fr\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\it\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ja\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ko\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ru\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\zh-hans\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\zh-hant\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\de\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\es\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\fr\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\it\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ja\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ko\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ru\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\zh-hans\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\zh-hant\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\de\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\es\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\fr\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\it\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ja\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ko\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ru\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\zh-hans\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\zh-hant\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\de\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\es\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\fr\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\it\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ja\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ko\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ru\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\System.Runtime.dll" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\zh-hans\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\zh-hant\System.Runtime.xml" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\portable-net45+win8+wp80+wpa81\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\win8\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\wp80\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\wpa81\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\xamarinios10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\xamarinmac20\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\xamarintvos10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ref\xamarinwatchos10\_._" />
+    <Content Include="node_modules\System.Runtime\4.1.0\System.Runtime.4.1.0.nupkg" />
+    <Content Include="node_modules\System.Runtime\4.1.0\System.Runtime.4.1.0.nupkg.sha512" />
+    <Content Include="node_modules\System.Runtime\4.1.0\System.Runtime.nuspec" />
+    <Content Include="node_modules\System.Runtime\4.1.0\ThirdPartyNotices.txt" />
+    <Content Include="NonCoreDLL\BasicNonCore.dll" />
+    <Content Include="NonCoreDLL\BasicNonCore.pdb" />
+    <Content Include="NonCoreDLL\EdgeJs.dll" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoreDLL\" />
+    <Folder Include="NonCoreDLL\" />
+    <Folder Include="node_modules\System.Runtime\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\MonoAndroid10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\MonoTouch10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\net45\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\net462\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\portable-net45+win8+wp80+wpa81\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\win8\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\wp80\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\wpa81\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\xamarinios10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\xamarinmac20\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\xamarintvos10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\lib\xamarinwatchos10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\MonoAndroid10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\MonoTouch10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\net45\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\net462\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\de\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\es\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\fr\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\it\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ja\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ko\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\ru\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\zh-hans\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netcore50\zh-hant\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\de\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\es\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\fr\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\it\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ja\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ko\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\ru\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\zh-hans\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.0\zh-hant\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\de\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\es\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\fr\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\it\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ja\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ko\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\ru\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\zh-hans\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.2\zh-hant\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\de\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\es\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\fr\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\it\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ja\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ko\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\ru\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\zh-hans\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.3\zh-hant\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\de\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\es\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\fr\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\it\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ja\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ko\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\ru\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\zh-hans\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\netstandard1.5\zh-hant\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\portable-net45+win8+wp80+wpa81\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\win8\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\wp80\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\wpa81\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\xamarinios10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\xamarinmac20\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\xamarintvos10\" />
+    <Folder Include="node_modules\System.Runtime\4.1.0\ref\xamarinwatchos10\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

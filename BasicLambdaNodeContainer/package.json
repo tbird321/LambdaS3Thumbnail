@@ -1,0 +1,12 @@
+{
+  "name": "basic-lambda-node-container",
+  "version": "0.0.0",
+  "description": "BasicLambdaNodeContainer",
+  "main": "app.js",
+  "author": {
+    "name": "tbird321"
+  },
+  "dependencies": {
+    "edge": "6.5.1"    
+  }
+}
